@@ -1,0 +1,16 @@
+
+<div *ngFor = "let res of result" >
+  <div *ngIf="res.email==read()">
+    <h4>Your Vehicle Service Booking Details Are:</h4>
+  <label><b>Location:</b></label>{{res.location}}<br>
+  <label><b>Date:</b></label>{{res.date}}
+</div>
+
+</div><br><br>
+<div *ngFor = "let res1 of loginresult" >
+  <div *ngIf="res1.email==read()">
+    <h4>Your Account Details Are:</h4>
+  <label><b>email:</b></label>{{res1.email}}<br>
+  <label><b>password:</b></label>{{res1.password}}
+</div>
+</div>
